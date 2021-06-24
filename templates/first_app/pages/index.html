@@ -1,0 +1,168 @@
+{% extends 'first_app/layout/main_lay.html' %} {% block title_block %} Index
+Data {% endblock title_block %} {% block header_section %}
+<h1 class="text-white mb-0">All Home</h1>
+{% endblock header_section %} {% block content_block %}
+<div class="pt-4">
+  <div class="row mx-0">
+    <div class="col">
+      <div class="card">
+        <div class="card-header" style="background: #040926ff">
+          <h4 class="mb-0 text-white">Some Data Stuff</h4>
+        </div>
+        <div class="card-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="tab"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                >Add Book</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="profile-tab"
+                data-toggle="tab"
+                href="#profile"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+                >Show Books</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-toggle="tab"
+                href="#contact"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Delete Book</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <div class="col-5 mx-auto my-3">
+                <div class="card border-success">
+                  <div class="card-body">
+                    <p class="mb-0 lead font-weight-bold my-2">
+                      Add a new book
+                    </p>
+                    <div class="col-12">
+                      <div class="" id="alert_box"></div>
+                    </div>
+                    <div class="add_form">
+                      <div class="form-group">
+                        <label for="book_name">Book Name</label>
+                        <input
+                          type="text"
+                          name="book_name"
+                          id="book_name"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="price">Book Price</label>
+                        <input
+                          type="number"
+                          name="price"
+                          id="price"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="pages">Book Pages</label>
+                        <input
+                          type="number"
+                          name="pages"
+                          id="pages"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="description">Book Name</label>
+                        <textarea
+                          name="description"
+                          id="description"
+                          rows="5"
+                          class="form-control"
+                          required
+                        ></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-success" id="save_book">
+                          Add Book
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              contach Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquam et obcaecati, magni corporis earum provident cupiditate
+              impedit totam nisi vitae esse culpa quos ullam! Totam, temporibus
+              impedit est cumque itaque rerum repellat recusandae sint excepturi
+              sapiente expedita consequuntur placeat quisquam. Ipsa, dolores
+              beatae. Quos vero soluta molestias. Nostrum distinctio nemo
+              obcaecati dolor inventore facere explicabo. Alias obcaecati odio,
+              laudantium cumque consequuntur eum tenetur? Consectetur sunt quae
+              tempore. Sunt iure veritatis et, expedita laboriosam corporis
+              neque perspiciatis? Aspernatur dolores minus nostrum in quaerat,
+              laboriosam iste consequatur! Magnam provident fugit quae est ipsam
+              cum odio quaerat. Tenetur ullam a voluptatum veritatis cupiditate,
+              numquam quibusdam ad minus est doloribus, vel libero atque
+              molestias aliquam explicabo ut quisquam culpa harum unde nesciunt,
+              quis beatae! Non reiciendis, eum quos dolorem vel, officia ratione
+              dolores esse sunt voluptates, molestias soluta modi alias tempore!
+              Voluptatem corporis illum necessitatibus non, sequi fugiat ex
+              placeat tenetur cumque, dolorum commodi fuga eaque quo dolore.
+              Obcaecati saepe ullam aperiam omnis sit dolor, cupiditate
+              architecto pariatur a consectetur sequi? Ipsum quasi eos
+              cupiditate error sunt harum facere adipisci eligendi, eum iusto
+              odio explicabo corporis fugit facilis reiciendis nihil quibusdam
+              eaque quos laborum? Vitae, earum repellat, temporibus iusto
+              adipisci provident, ipsam reprehenderit doloremque distinctio hic
+              dolorem minus nesciunt aut! Iste velit harum assumenda ut nostrum.
+              Totam repellendus amet dolore itaque aliquam non doloribus ut
+              nobis impedit tempora dolor error eaque vero, ex deserunt
+              molestias, blanditiis, tenetur quod voluptatem. Nulla maxime
+              commodi dicta omnis nemo ut blanditiis laudantium, iste placeat
+              eligendi necessitatibus minima ullam expedita laboriosam quisquam
+              quas, tempora hic vero reiciendis officia consectetur, quaerat
+              deserunt reprehenderit sapiente! Ipsum unde doloribus minima
+              deleniti. Quibusdam praesentium assumenda distinctio possimus
+              voluptas similique! Dolores molestias sunt atque assumenda fugiat
+              consequuntur iste ad, aperiam officia sapiente doloremque quod
+              fugit amet obcaecati, exercitationem dignissimos nostrum dicta
+              perferendis quos officiis?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content_block %}
